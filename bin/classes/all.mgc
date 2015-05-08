@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.bn.Sample7_4.Earth" x="358" y="69">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.bn.Sample7_4.Moon" x="636" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.bn.Sample7_4.MySurfaceView.SceneRenderer" x="354" y="462">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.bn.Sample7_4.Celestial"
+            endpointName="cSmall" kind="Simple"/>
+        <Association destinationClassName="com.bn.Sample7_4.Moon"
+            endpointName="moon" kind="Simple"/>
+        <Association destinationClassName="com.bn.Sample7_4.Celestial"
+            endpointName="cBig" kind="Simple"/>
+        <Association destinationClassName="com.bn.Sample7_4.Earth"
+            endpointName="earth" kind="Simple"/>
+        <Communication destinationClassName="com.bn.Sample7_4.Earth"/>
+        <Communication destinationClassName="com.bn.Sample7_4.Moon"/>
+        <Communication destinationClassName="com.bn.Sample7_4.MatrixState"/>
+        <Communication destinationClassName="com.bn.Sample7_4.MySurfaceView"/>
+        <Communication destinationClassName="com.bn.Sample7_4.Celestial"/>
+    </Class>
+    <Class name="com.bn.Sample7_4.MatrixState" x="700" y="558">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.bn.Sample7_4.MySurfaceView" x="343" y="588">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.bn.Sample7_4.MySurfaceView.SceneRenderer"
+            endpointName="mRenderer" kind="Simple"/>
+        <Communication destinationClassName="com.bn.Sample7_4.Earth"/>
+        <Communication destinationClassName="com.bn.Sample7_4.Moon"/>
+        <Communication destinationClassName="com.bn.Sample7_4.MatrixState"/>
+        <Communication destinationClassName="com.bn.Sample7_4.Celestial"/>
+    </Class>
+    <Class name="com.bn.Sample7_4.MyActivity" x="391" y="877">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.bn.Sample7_4.MySurfaceView"
+            endpointName="mGLSurfaceView" kind="Simple"/>
+    </Class>
+    <Class name="com.bn.Sample7_4.Constant" x="852" y="566">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.bn.Sample7_4.Celestial" x="61" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>
