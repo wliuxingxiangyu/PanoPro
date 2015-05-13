@@ -19,7 +19,7 @@ public class Earth {
 	int maTexCoorHandle; // 顶点纹理坐标属性引用id
 	int maSunLightLocationHandle;// 光源位置属性引用id
 	int uDayTexHandle;// 白天纹理属性引用id
-	int uNightTexHandle;// 黑夜纹理属性引用id
+//	int uNightTexHandle;// 黑夜纹理属性引用id
 	String mVertexShader;// 顶点着色器
 	String mFragmentShader;// 片元着色器
 	FloatBuffer mVertexBuffer;// 顶点坐标数据缓冲
@@ -143,10 +143,10 @@ public class Earth {
 		// 获取程序中光源位置引用id
 		maSunLightLocationHandle = GLES20.glGetUniformLocation(mProgram,
 				"uLightLocationSun");
-		// 获取白天、黑夜两个纹理引用
+		
+		// 获取白天纹理引用
 		uDayTexHandle = GLES20.glGetUniformLocation(mProgram, "sTextureDay");
-		uNightTexHandle = GLES20
-				.glGetUniformLocation(mProgram, "sTextureNight");
+
 		// 获取位置、旋转变换矩阵引用id
 		muMMatrixHandle = GLES20.glGetUniformLocation(mProgram, "uMMatrix");
 	}
